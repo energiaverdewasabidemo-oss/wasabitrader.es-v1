@@ -149,15 +149,6 @@ ${aceptaInformacion ? '✅ Quiero recibir información sobre servicios' : ''}
             </p>
           </div>
         </div>
-
-        <div className="mt-6 text-center">
-          <div className="inline-block bg-blue-600 text-white px-6 py-2 rounded-lg shadow-lg">
-            <div className="flex items-center space-x-2">
-              <div className="w-3 h-3 bg-white rounded-full"></div>
-              <span className="text-sm font-bold">Empresa colaboradora autorizada por Endesa</span>
-            </div>
-          </div>
-        </div>
       </div>
     </div>
   );
