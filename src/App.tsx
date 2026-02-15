@@ -19,6 +19,7 @@ import CookiePolicy from './pages/CookiePolicy';
 import AboutUs from './pages/AboutUs';
 import OurTeam from './pages/OurTeam';
 import Contact from './pages/Contact';
+import Formulario from './pages/Formulario';
 
 // Loading component
 const LoadingSpinner = () => (
@@ -59,6 +60,7 @@ function App() {
         <Header />
         <Routes>
           <Route path="/" element={<HomePage />} />
+          <Route path="/formulario" element={<Formulario />} />
           <Route path="/privacidad" element={<PrivacyPolicy />} />
           <Route path="/terminos" element={<TermsOfService />} />
           <Route path="/cookies" element={<CookiePolicy />} />

@@ -60,39 +60,39 @@ export default function Header() {
             {/* Desktop Navigation optimizada */}
             <div className="hidden lg:flex items-center space-x-6">
               <nav className="flex items-center space-x-5">
-                <a 
-                  href="#comparador" 
+                <a
+                  href="#comparador"
                   className="font-bold text-gray-700 hover:text-blue-600 transition-colors text-sm"
                 >
                   Comparador
                 </a>
-                <a 
-                  href="#testimonios" 
+                <a
+                  href="#testimonios"
                   className="font-bold text-gray-700 hover:text-blue-600 transition-colors text-sm"
                 >
                   Testimonios
                 </a>
-                <Link 
-                  to="/sobre-nosotros" 
+                <Link
+                  to="/sobre-nosotros"
                   className="font-bold text-gray-700 hover:text-blue-600 transition-colors text-sm"
                 >
                   Nosotros
                 </Link>
-                <Link 
-                  to="/contacto" 
+                <Link
+                  to="/contacto"
                   className="font-bold text-gray-700 hover:text-blue-600 transition-colors text-sm"
                 >
                   Contacto
                 </Link>
               </nav>
-              
+
               {/* CTA optimizado */}
-              <a 
-                href="#formulario" 
+              <Link
+                to="/formulario"
                 className="bg-gradient-to-r from-blue-500 to-blue-600 text-white px-4 py-2 rounded-lg font-bold hover:from-blue-400 hover:to-blue-500 transition-colors text-sm whitespace-nowrap"
               >
                 EMPEZAR
-              </a>
+              </Link>
             </div>
             
             {/* Mobile Menu Button optimizado */}
@@ -110,43 +110,43 @@ export default function Header() {
         {isMobileMenuOpen && (
           <div className="lg:hidden bg-white border-t border-gray-200 shadow-lg">
             <div className="px-4 py-4 space-y-3">
-              <a 
-                href="#comparador" 
-                onClick={() => setIsMobileMenuOpen(false)} 
+              <a
+                href="#comparador"
+                onClick={() => setIsMobileMenuOpen(false)}
                 className="block text-gray-700 font-bold hover:text-blue-600 transition-colors py-1"
               >
                 Comparador
               </a>
-              <a 
-                href="#testimonios" 
-                onClick={() => setIsMobileMenuOpen(false)} 
+              <a
+                href="#testimonios"
+                onClick={() => setIsMobileMenuOpen(false)}
                 className="block text-gray-700 font-bold hover:text-blue-600 transition-colors py-1"
               >
                 Testimonios
               </a>
-              <Link 
-                to="/sobre-nosotros" 
-                onClick={() => setIsMobileMenuOpen(false)} 
+              <Link
+                to="/sobre-nosotros"
+                onClick={() => setIsMobileMenuOpen(false)}
                 className="block text-gray-700 font-bold hover:text-blue-600 transition-colors py-1"
               >
                 Nosotros
               </Link>
-              <Link 
-                to="/contacto" 
-                onClick={() => setIsMobileMenuOpen(false)} 
+              <Link
+                to="/contacto"
+                onClick={() => setIsMobileMenuOpen(false)}
                 className="block text-gray-700 font-bold hover:text-blue-600 transition-colors py-1"
               >
                 Contacto
               </Link>
-              
+
               <div className="pt-3 border-t border-gray-200">
-                <a 
-                  href="#formulario" 
+                <Link
+                  to="/formulario"
                   onClick={() => setIsMobileMenuOpen(false)}
                   className="block w-full bg-gradient-to-r from-blue-500 to-blue-600 text-white py-3 rounded-lg font-bold text-center"
                 >
                   EMPEZAR FORMULARIO
-                </a>
+                </Link>
               </div>
             </div>
           </div>
