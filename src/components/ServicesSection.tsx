@@ -68,16 +68,29 @@ const services = [
 
 const handleButtonClick = (service: any) => {
   if (service.buttonType === "whatsapp") {
-    const message = `Hola, estoy interesado en ver los seguros de salud disponibles. 
+    let message = '';
+
+    if (service.title === "Salud") {
+      message = `Hola, estoy interesado en ver los seguros de salud disponibles.
 
 Me gustaría recibir información sobre:
 - Adeslas
-- DKV  
+- DKV
 - Sanitas
 - Caser
 
 ¿Podrían ayudarme con una comparativa personalizada?`;
-    
+    } else if (service.title === "Seguridad") {
+      message = `Hola, estoy interesado en sistemas de alarmas y seguridad.
+
+Me gustaría recibir información sobre:
+- ADT
+- 3D Seguridad
+- Securitas Direct
+
+¿Podrían ayudarme con una comparativa personalizada?`;
+    }
+
     const whatsappUrl = `https://wa.me/34621508300?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');
   } else if (service.buttonType === "external") {
@@ -181,13 +194,14 @@ export default function ServicesSection() {
                     <ArrowRight className="w-4 h-4 lg:w-5 lg:h-5" />
                   </a>
                 ) : (
-                  <button 
+                  <button
                     onClick={() => handleButtonClick(service)}
                     className={`w-full bg-gradient-to-r ${service.color} text-white py-3 lg:py-4 rounded-2xl font-black text-sm lg:text-base hover:shadow-lg transition-all duration-200 flex items-center justify-center space-x-2 hover:scale-105`}
                   >
                     <span>
-                      {service.title === "Salud" ? "VER SEGUROS" : 
-                       service.title === "Telco" ? "IR A WASABITEL" : 
+                      {service.title === "Salud" ? "VER SEGUROS" :
+                       service.title === "Seguridad" ? "VER ALARMAS" :
+                       service.title === "Telco" ? "IR A WASABITEL" :
                        `COMPARAR ${service.title.toUpperCase()}`}
                     </span>
                     <ArrowRight className="w-4 h-4 lg:w-5 lg:h-5" />
