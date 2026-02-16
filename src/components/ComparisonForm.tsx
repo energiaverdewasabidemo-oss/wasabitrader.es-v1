@@ -521,7 +521,7 @@ ${formData.uploadedFileName ? `• Factura adjunta: ${formData.uploadedFileName}
                       required
                     />
                     <label htmlFor="acceptsTerms" className="text-xs sm:text-sm text-gray-700 leading-relaxed">
-                      <span className="font-bold text-red-500">*</span> Acepto el tratamiento de mis datos personales por parte de <span className="font-bold">WASABI TRADER S.L.</span> (CIF: B12345678) para gestionar mi solicitud de comparativa energética. 
+                      <span className="font-bold text-red-500">*</span> Acepto el tratamiento de mis datos personales por parte de <span className="font-bold">WASABI TRADER S.L.</span> (CIF: B42709378) para gestionar mi solicitud de comparativa energética. 
                       <span className="block mt-2 text-xs text-gray-500">
                         Puede ejercer sus derechos dirigiéndose a: info@wasabitrader.com. 
                         <a href="/privacidad" className="text-blue-600 hover:underline ml-1" target="_blank" rel="noopener noreferrer">
@@ -549,7 +549,7 @@ ${formData.uploadedFileName ? `• Factura adjunta: ${formData.uploadedFileName}
                       <Info className="w-4 h-4 text-blue-600 mt-0.5 flex-shrink-0" />
                       <div className="text-xs text-blue-700">
                         <p className="font-bold mb-1">Información de la empresa:</p>
-                        <p>WASABI TRADER S.L. - CIF: B12345678</p>
+                        <p>WASABI TRADER S.L. - CIF: B42709378</p>
                         <p>Calle Andarella 2, 46950 Valencia</p>
                         <p>Tel: +34 621 50 83 00 | Email: info@wasabitrader.com</p>
                       </div>

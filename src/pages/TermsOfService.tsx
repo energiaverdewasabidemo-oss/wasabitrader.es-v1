@@ -34,7 +34,7 @@ export default function TermsOfService() {
             </h2>
             <div className="text-blue-800 space-y-2">
               <p><strong>Razón Social:</strong> WASABI TRADER S.L.</p>
-              <p><strong>CIF:</strong> B12345678</p>
+              <p><strong>CIF:</strong> B42709378</p>
               <p><strong>Dirección:</strong> Calle Andarella 2, 46950 Valencia</p>
               <p><strong>Teléfono:</strong> +34 621 50 83 00</p>
               <p><strong>Email:</strong> info@wasabitrader.com</p>
