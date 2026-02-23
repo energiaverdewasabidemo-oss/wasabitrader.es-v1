@@ -77,7 +77,7 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link to="/#formulario" className="hover:text-blue-400 transition-all duration-300 font-bold flex items-center group text-sm lg:text-base">
+                <Link to="/asesoramiento" className="hover:text-blue-400 transition-all duration-300 font-bold flex items-center group text-sm lg:text-base">
                   <Award className="w-4 h-4 lg:w-5 lg:h-5 mr-2 lg:mr-3 group-hover:animate-pulse" />
                   Asesoramiento
                 </Link>

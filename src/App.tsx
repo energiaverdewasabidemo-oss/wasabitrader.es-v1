@@ -21,6 +21,7 @@ import AboutUs from './pages/AboutUs';
 import OurTeam from './pages/OurTeam';
 import Contact from './pages/Contact';
 import Formulario from './pages/Formulario';
+import Asesoramiento from './pages/Asesoramiento';
 
 // Loading component
 const LoadingSpinner = () => (
@@ -63,6 +64,7 @@ function App() {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/formulario" element={<Formulario />} />
+          <Route path="/asesoramiento" element={<Asesoramiento />} />
           <Route path="/privacidad" element={<PrivacyPolicy />} />
           <Route path="/terminos" element={<TermsOfService />} />
           <Route path="/cookies" element={<CookiePolicy />} />
